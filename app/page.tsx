@@ -9,6 +9,7 @@ import { MemoryCard } from "@/components/memory-card";
 import { QuickCapture } from "@/components/quick-capture";
 import { ArrowIcon } from "@/components/icons";
 
+
 export default function TodayPage() {
   const recentMemories = useQuery(api.memories.listRecentMemories, { limit: 5 });
   const importantMemories = useQuery(api.memories.listImportantMemories, {
